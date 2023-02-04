@@ -1,8 +1,9 @@
 package ru.top.models;
 
+import javax.smartcardio.Card;
 import java.util.List;
 
 public class Player {
     private String name;
-    private List<Integer> cards;
+    private List<Card> cards;
 }
