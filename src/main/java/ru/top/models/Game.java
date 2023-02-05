@@ -4,9 +4,7 @@ import ru.top.models.Card;
 import ru.top.models.Player;
 import ru.top.models.Suit;
 
-import java.util.Collections;
-import java.util.List;
-import java.util.Random;
+import java.util.*;
 
 public class Game {
    private final List<Card> cardDeck;
@@ -40,12 +38,20 @@ public class Game {
       Collections.shuffle(cardDeck);
    }
 
+   public void play() {
+      boolean isPlaying = true;
+      while(isPlaying) {
+         //Главный цикл игры
+      }
+   }
+
 
    /**
     *
     * @return random suit
     */
    private Suit randomSuit() {
-      return null;
+      Random random = new Random();
+      return Suit.values()[random.nextInt(4)];
    }
 }
