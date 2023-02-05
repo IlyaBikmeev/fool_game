@@ -38,6 +38,13 @@ public class Game {
       Collections.shuffle(cardDeck);
    }
 
+   public void play() {
+      boolean isPlaying = true;
+      while(isPlaying) {
+         //Главный цикл игры
+      }
+   }
+
 
    /**
     *
