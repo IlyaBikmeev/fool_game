@@ -37,7 +37,7 @@ public class Game {
     * Размешивает случайным образом колоду. Можно использовать Collections.shuffle
     */
    private void randomShuffle() {
-
+      Collections.shuffle(cardDeck);
    }
 
 
