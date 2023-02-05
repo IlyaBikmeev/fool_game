@@ -45,8 +45,6 @@ public class Game {
     */
    private Suit randomSuit() {
       Random random = new Random();
-      List<Enum> suit = new ArrayList<>();
-      suit.addAll(Arrays.asList(Suit.values()));
-      return (Suit) suit.get(random.nextInt(4));
+      return Arrays.asList(Suit.values()).get(random.nextInt(4));
    }
 }
