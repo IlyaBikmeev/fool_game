@@ -35,7 +35,14 @@ public class Game {
     * Размешивает случайным образом колоду. Можно использовать Collections.shuffle
     */
    private void randomShuffle() {
+      Collections.shuffle(cardDeck);
+   }
 
+   public void play() {
+      boolean isPlaying = true;
+      while(isPlaying) {
+         //Главный цикл игры
+      }
    }
 
 
@@ -45,8 +52,6 @@ public class Game {
     */
    private Suit randomSuit() {
       Random random = new Random();
-      List<Enum> suit = new ArrayList<>();
-      suit.addAll(Arrays.asList(Suit.values()));
-      return (Suit) suit.get(random.nextInt(4));
+      return Suit.values()[random.nextInt(4)];
    }
 }
