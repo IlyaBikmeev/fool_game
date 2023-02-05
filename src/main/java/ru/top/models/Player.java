@@ -19,7 +19,9 @@ public class Player {
      * @return карту, которую игрок выкинул
      */
     public Card attack(int i) {
-        return null;
+        Card card = cards.get(i);
+        cards.remove(i);
+        return card;
     }
 
     /**
