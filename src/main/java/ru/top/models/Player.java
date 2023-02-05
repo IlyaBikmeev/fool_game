@@ -14,10 +14,10 @@ public class Player {
     }
 
     public void giveCard(Card card) {
-
+        cards.add(card);
     }
 
     public void giveCards(Collection<Card> cards) {
-
+        this.cards.addAll(cards);
     }
 }
