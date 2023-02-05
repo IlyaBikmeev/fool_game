@@ -45,6 +45,6 @@ public class Game {
     */
    private Suit randomSuit() {
       Random random = new Random();
-      return Arrays.asList(Suit.values()).get(random.nextInt(4));
+      return Suit.values()[random.nextInt(4)];
    }
 }
